@@ -1,0 +1,1243 @@
+{
+  "generated": "2026-11-20T04:33:06",
+  "experiment_folder": "<Drive>/BASIL_datasets",
+  "note": "'constants_found_in_code' lists EVERY occurrence found in the saved code (several notebooks may differ); nothing was inferred. 'report_claims' are what the report says, for comparison only.",
+  "executed_runs_with_saved_predictions": [
+    {
+      "run_folder": "xlm-roberta-base_anno_babe_basil",
+      "file_prefix": "anno_babe_basil",
+      "report_setup": "Anno-lexical -> BABE -> BASIL",
+      "seeds_with_saved_predictions": [
+        42,
+        43,
+        44
+      ],
+      "arrays_in_npz": [
+        "test",
+        "val"
+      ],
+      "has_ensemble_prediction_file": true,
+      "has_results_csv": true
+    },
+    {
+      "run_folder": "xlm-roberta-base_anno_then_basil",
+      "file_prefix": "anno_then_basil",
+      "report_setup": "Anno-lexical -> BASIL",
+      "seeds_with_saved_predictions": [
+        42,
+        43,
+        44
+      ],
+      "arrays_in_npz": [
+        "test",
+        "val"
+      ],
+      "has_ensemble_prediction_file": true,
+      "has_results_csv": true
+    },
+    {
+      "run_folder": "xlm-roberta-base_babe_basil",
+      "file_prefix": "babe_basil",
+      "report_setup": "BABE -> BASIL",
+      "seeds_with_saved_predictions": [
+        42,
+        43,
+        44
+      ],
+      "arrays_in_npz": [
+        "test",
+        "val"
+      ],
+      "has_ensemble_prediction_file": true,
+      "has_results_csv": true
+    },
+    {
+      "run_folder": "xlm-roberta-base_sample5",
+      "file_prefix": "target",
+      "report_setup": "BASIL only",
+      "seeds_with_saved_predictions": [
+        42,
+        43,
+        44
+      ],
+      "arrays_in_npz": [
+        "test",
+        "val"
+      ],
+      "has_ensemble_prediction_file": true,
+      "has_results_csv": true
+    },
+    {
+      "run_folder": "xlm-roberta-base_sample5",
+      "file_prefix": "target_context",
+      "report_setup": "NOT IN REPORT",
+      "seeds_with_saved_predictions": [
+        42,
+        43,
+        44
+      ],
+      "arrays_in_npz": [
+        "test",
+        "val"
+      ],
+      "has_ensemble_prediction_file": true,
+      "has_results_csv": true
+    },
+    {
+      "run_folder": "xlm-roberta-base_span_anno_babe",
+      "file_prefix": "span_anno_babe",
+      "report_setup": "Word-level (sentence head)",
+      "seeds_with_saved_predictions": [
+        42,
+        43,
+        44
+      ],
+      "arrays_in_npz": [
+        "has",
+        "hit",
+        "test",
+        "test_comb",
+        "val",
+        "val_comb"
+      ],
+      "has_ensemble_prediction_file": true,
+      "has_results_csv": true
+    },
+    {
+      "run_folder": "xlm-roberta-base_weighted",
+      "file_prefix": "context_only",
+      "report_setup": "NOT IN REPORT",
+      "seeds_with_saved_predictions": [
+        42,
+        43,
+        44
+      ],
+      "arrays_in_npz": [
+        "test",
+        "val"
+      ],
+      "has_ensemble_prediction_file": true,
+      "has_results_csv": false
+    },
+    {
+      "run_folder": "xlm-roberta-base_weighted",
+      "file_prefix": "target",
+      "report_setup": "NOT IN REPORT",
+      "seeds_with_saved_predictions": [
+        42,
+        43,
+        44
+      ],
+      "arrays_in_npz": [
+        "test",
+        "val"
+      ],
+      "has_ensemble_prediction_file": true,
+      "has_results_csv": false
+    },
+    {
+      "run_folder": "xlm-roberta-base_weighted",
+      "file_prefix": "target_context",
+      "report_setup": "NOT IN REPORT",
+      "seeds_with_saved_predictions": [
+        42,
+        43,
+        44
+      ],
+      "arrays_in_npz": [
+        "test",
+        "val"
+      ],
+      "has_ensemble_prediction_file": true,
+      "has_results_csv": false
+    }
+  ],
+  "constants_found_in_code": {
+    "USE_DRIVE": [
+      {
+        "value": true,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      }
+    ],
+    "DRIVE_MOUNT": [
+      {
+        "value": "/content/gdrive",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      },
+      {
+        "value": "/content/gdrive",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": "/content/gdrive",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": "/content/gdrive",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      },
+      {
+        "value": "/content/gdrive",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 9,
+        "exec": null
+      }
+    ],
+    "MODEL_NAME": [
+      {
+        "value": "xlm-roberta-base",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      },
+      {
+        "value": "xlm-roberta-base",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": "xlm-roberta-base",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": "xlm-roberta-base",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "SEEDS": [
+      {
+        "value": [
+          42,
+          43,
+          44
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      },
+      {
+        "value": [
+          42,
+          43,
+          44
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": [
+          42,
+          43,
+          44
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": [
+          42,
+          43,
+          44
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 7,
+        "exec": null
+      },
+      {
+        "value": [
+          42,
+          43,
+          44
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      },
+      {
+        "value": [
+          42,
+          43,
+          44
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 10,
+        "exec": 2
+      }
+    ],
+    "S1_EPOCHS": [
+      {
+        "value": 2,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      }
+    ],
+    "S1_BATCH": [
+      {
+        "value": 32,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      }
+    ],
+    "S1_LR": [
+      {
+        "value": 2e-05,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      }
+    ],
+    "S1_MAX_LEN": [
+      {
+        "value": 128,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      }
+    ],
+    "S1_MAX_TRAIN": [
+      {
+        "value": null,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      }
+    ],
+    "EPOCHS": [
+      {
+        "value": 8,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      },
+      {
+        "value": 8,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 8,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": 8,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "BATCH": [
+      {
+        "value": 16,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      },
+      {
+        "value": 16,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 16,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": 16,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "LR": [
+      {
+        "value": 1e-05,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      },
+      {
+        "value": 1e-05,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 1e-05,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": 1e-05,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "MAX_LEN": [
+      {
+        "value": 256,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      },
+      {
+        "value": 256,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 256,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": 256,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "NEG_PER_POS": [
+      {
+        "value": 5,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      },
+      {
+        "value": 5,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 5,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": 5,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "RUN_NAME": [
+      {
+        "value": "xlm-roberta-base_anno_then_basil",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      }
+    ],
+    "OVERWRITE": [
+      {
+        "value": false,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 3,
+        "exec": null
+      },
+      {
+        "value": false,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": false,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": false,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "START": [
+      {
+        "value": "anno",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": "base",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      },
+      {
+        "value": "anno_babe",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "B_EPOCHS": [
+      {
+        "value": 3,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 3,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      }
+    ],
+    "B_BATCH": [
+      {
+        "value": 16,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 16,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      }
+    ],
+    "B_LR": [
+      {
+        "value": 1e-05,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 1e-05,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      }
+    ],
+    "B_MAX_LEN": [
+      {
+        "value": 128,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 128,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      }
+    ],
+    "MIN_COUNT": [
+      {
+        "value": 8,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 8,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      }
+    ],
+    "RATE_MIN": [
+      {
+        "value": 0.3,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": 0.3,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      }
+    ],
+    "MAX_PER_OUTLET": [
+      {
+        "value": null,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 5,
+        "exec": null
+      },
+      {
+        "value": null,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 6,
+        "exec": null
+      }
+    ],
+    "BASE": [
+      {
+        "value": "/content/gdrive/MyDrive/BASIL_datasets",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 7,
+        "exec": null
+      },
+      {
+        "value": "/content/gdrive/MyDrive/BASIL_datasets",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 10,
+        "exec": 2
+      }
+    ],
+    "RUNS": [
+      {
+        "value": {
+          "BASIL only": [
+            "xlm-roberta-base_sample5",
+            "target"
+          ],
+          "BABE -> BASIL": [
+            "xlm-roberta-base_babe_basil",
+            "babe_basil"
+          ],
+          "Anno -> BASIL": [
+            "xlm-roberta-base_anno_then_basil",
+            "anno_then_basil"
+          ],
+          "Anno -> BABE -> BASIL": [
+            "xlm-roberta-base_anno_babe_basil",
+            "anno_babe_basil"
+          ]
+        },
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 7,
+        "exec": null
+      },
+      {
+        "value": {
+          "BASIL only": [
+            "xlm-roberta-base_sample5",
+            "target"
+          ],
+          "BABE -> BASIL": [
+            "xlm-roberta-base_babe_basil",
+            "babe_basil"
+          ],
+          "Anno -> BASIL": [
+            "xlm-roberta-base_anno_then_basil",
+            "anno_then_basil"
+          ],
+          "Anno -> BABE -> BASIL": [
+            "xlm-roberta-base_anno_babe_basil",
+            "anno_babe_basil"
+          ]
+        },
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 10,
+        "exec": 2
+      }
+    ],
+    "PAIRS": [
+      {
+        "value": [
+          [
+            "BASIL only",
+            "Anno -> BASIL"
+          ],
+          [
+            "BASIL only",
+            "BABE -> BASIL"
+          ],
+          [
+            "BASIL only",
+            "Anno -> BABE -> BASIL"
+          ],
+          [
+            "BABE -> BASIL",
+            "Anno -> BASIL"
+          ],
+          [
+            "Anno -> BASIL",
+            "Anno -> BABE -> BASIL"
+          ]
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 7,
+        "exec": null
+      }
+    ],
+    "N_BOOT": [
+      {
+        "value": 2000,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 7,
+        "exec": null
+      },
+      {
+        "value": 1000,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 10,
+        "exec": 2
+      }
+    ],
+    "P": [
+      {
+        "value": {},
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 7,
+        "exec": null
+      }
+    ],
+    "LAMBDA_TOK": [
+      {
+        "value": 1.0,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "TOK_POS_W": [
+      {
+        "value": 5.0,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 8,
+        "exec": null
+      }
+    ],
+    "RUN": [
+      {
+        "value": "xlm-roberta-base_anno_babe_basil",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 9,
+        "exec": null
+      }
+    ],
+    "RELEVANT_FOLDER_NAMES": [
+      {
+        "value": [
+          "colab notebooks",
+          "basil_datasets",
+          "basil_datasets (1)"
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 11,
+        "exec": 1
+      }
+    ],
+    "RELEVANT_ROOT_FILES": [
+      {
+        "value": [
+          "train_corrected.csv",
+          "test_corrected.csv",
+          "validation_corrected.csv",
+          "lexical_bias_dataset_corrected.csv"
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 11,
+        "exec": 1
+      }
+    ],
+    "EXTENSIONS": [
+      {
+        "value": [
+          ".jpeg",
+          ".svg",
+          ".jsonl",
+          ".txt",
+          ".jpg",
+          ".md",
+          ".json",
+          ".xlsx",
+          ".tsv",
+          ".png",
+          ".log",
+          ".yaml",
+          ".ipynb",
+          ".yml",
+          ".csv"
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 11,
+        "exec": 1
+      },
+      {
+        "value": [
+          ".svg",
+          ".jsonl",
+          ".txt",
+          ".jpg",
+          ".md",
+          ".json",
+          ".xlsx",
+          ".tsv",
+          ".png",
+          ".log",
+          ".yaml",
+          ".ipynb",
+          ".yml",
+          ".csv"
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 12,
+        "exec": 2
+      }
+    ],
+    "EXCLUDE_DIRS": [
+      {
+        "value": [
+          ".ipynb_checkpoints",
+          "node_modules",
+          "wandb",
+          "__pycache__",
+          "caches",
+          "cache",
+          ".git"
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 11,
+        "exec": 1
+      },
+      {
+        "value": [
+          ".ipynb_checkpoints",
+          "node_modules",
+          "wandb",
+          "__pycache__",
+          "caches",
+          "cache",
+          ".git"
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 12,
+        "exec": 2
+      }
+    ],
+    "MAX_FILE_MB": [
+      {
+        "value": 75,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 11,
+        "exec": 1
+      }
+    ],
+    "MAX_TOTAL_MB": [
+      {
+        "value": 400,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 11,
+        "exec": 1
+      }
+    ],
+    "NOTEBOOK_NAME": [
+      {
+        "value": "BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 12,
+        "exec": 2
+      }
+    ],
+    "KEYWORDS": [
+      {
+        "value": [
+          "basil",
+          "babe",
+          "anno",
+          "lexical",
+          "bias",
+          "prediction",
+          "predictions",
+          "metric",
+          "result",
+          "evaluation",
+          "confusion",
+          "bootstrap",
+          "split",
+          "seed",
+          "train_corrected",
+          "validation_corrected",
+          "test_corrected"
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 12,
+        "exec": 2
+      },
+      {
+        "value": [
+          "AutoModelForSequenceClassification",
+          "pick_threshold",
+          "BASIL",
+          "xlm-roberta"
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "MOUNT_CANDIDATES": [
+      {
+        "value": [
+          "/content/drive",
+          "/content/gdrive"
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "EXTRA_DIR": [
+      {
+        "value": "/content/extra_inputs",
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "EXTRA_PATHS": [
+      {
+        "value": [],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "COPY_ZIP_TO_DRIVE": [
+      {
+        "value": true,
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "SEEDS_EXPECTED": [
+      {
+        "value": [
+          42,
+          43,
+          44
+        ],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "INV": [
+      {
+        "value": [],
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "KNOWN": [
+      {
+        "value": {
+          "('xlm-roberta-base_sample5', 'target')": "BASIL only",
+          "('xlm-roberta-base_babe_basil', 'babe_basil')": "BABE -> BASIL",
+          "('xlm-roberta-base_anno_then_basil', 'anno_then_basil')": "Anno-lexical -> BASIL",
+          "('xlm-roberta-base_anno_babe_basil', 'anno_babe_basil')": "Anno-lexical -> BABE -> BASIL",
+          "('xlm-roberta-base_span_anno_babe', 'span_anno_babe')": "Word-level (sentence head)"
+        },
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "ENS": [
+      {
+        "value": {},
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "FACTS": [
+      {
+        "value": {
+          "optimizer is AdamW": "torch\\.optim\\.AdamW",
+          "weight decay 0.01": "weight_decay\\s*=\\s*0\\.01",
+          "linear schedule with warm-up": "get_linear_schedule_with_warmup",
+          "10% warm-up": "int\\(0\\.1\\s*\\*",
+          "gradient clipping 1.0": "clip_grad_norm_\\([^)]*,\\s*1\\.0\\)",
+          "mixed precision fp16": "torch\\.autocast\\([^)]*float16",
+          "unweighted cross-entropy for sentence loss": "F\\.cross_entropy\\(\\s*(ls|logits)\\.float\\(\\),\\s*labels\\)",
+          "word-level loss uses class weight": "weight\\s*=\\s*wtok",
+          "negative sampling per epoch (rng.choice of negatives)": "rng\\.choice\\(neg_idx",
+          "threshold = best validation F1 on grid 0.02..0.98": "np\\.linspace\\(0\\.02,\\s*0\\.98,\\s*97\\)",
+          "ties keep lower threshold (strict >)": "f1\\s*>\\s*best_f1\\s*\\+\\s*1e-12",
+          "epoch chosen by validation PR-AUC": "average_precision_score\\(y_va",
+          "ensemble = mean of seed probabilities": "np\\.mean\\(pvs,\\s*0\\)",
+          "story-level bootstrap with default_rng(seed)": "default_rng\\(seed\\)",
+          "seed set (python/numpy/torch/cuda)": "torch\\.cuda\\.manual_seed_all",
+          "classifier head = AutoModelForSequenceClassification(num_labels=2)": "AutoModelForSequenceClassification\\.from_pretrained\\([^)]*num_labels\\s*=\\s*2",
+          "BABE 10% held-out, stratified, random_state=0": "test_size\\s*=\\s*0\\.1,\\s*stratify=[^,]+,\\s*random_state\\s*=\\s*0"
+        },
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "T4": [
+      {
+        "value": {
+          "BASIL only": [
+            0.741,
+            0.174,
+            0.217,
+            0.192,
+            0.333
+          ],
+          "BABE -> BASIL": [
+            0.804,
+            0.199,
+            0.251,
+            0.249,
+            0.254
+          ],
+          "Anno-lexical -> BASIL": [
+            0.832,
+            0.212,
+            0.277,
+            0.244,
+            0.326
+          ],
+          "Anno-lexical -> BABE -> BASIL": [
+            0.841,
+            0.208,
+            0.32,
+            0.224,
+            0.572
+          ],
+          "Word-level (sentence head)": [
+            0.807,
+            0.18,
+            0.213,
+            0.19,
+            0.254
+          ]
+        },
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "T5": [
+      {
+        "value": {
+          "BASIL only": [
+            0.757,
+            0.175,
+            0.211
+          ],
+          "BABE -> BASIL": [
+            0.815,
+            0.204,
+            0.249
+          ],
+          "Anno-lexical -> BASIL": [
+            0.835,
+            0.213,
+            0.263
+          ],
+          "Anno-lexical -> BABE -> BASIL": [
+            0.845,
+            0.212,
+            0.336
+          ],
+          "Word-level (sentence head)": [
+            0.821,
+            0.184,
+            0.224
+          ]
+        },
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ],
+    "T6": [
+      {
+        "value": {
+          "('BASIL only', 'Anno-lexical -> BASIL')": [
+            0.078,
+            0.035
+          ],
+          "('BASIL only', 'BABE -> BASIL')": [
+            0.058,
+            0.026
+          ],
+          "('BASIL only', 'Anno-lexical -> BABE -> BASIL')": [
+            0.088,
+            0.034
+          ],
+          "('BABE -> BASIL', 'Anno-lexical -> BASIL')": [
+            0.02,
+            0.009
+          ],
+          "('Anno-lexical -> BASIL', 'Anno-lexical -> BABE -> BASIL')": [
+            0.01,
+            -0.001
+          ]
+        },
+        "source": "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb",
+        "cell": 13,
+        "exec": null
+      }
+    ]
+  },
+  "code_facts_checked": {
+    "optimizer is AdamW": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8"
+    ],
+    "weight decay 0.01": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8"
+    ],
+    "linear schedule with warm-up": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 13"
+    ],
+    "10% warm-up": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8"
+    ],
+    "gradient clipping 1.0": "NOT FOUND in any code located",
+    "mixed precision fp16": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8"
+    ],
+    "unweighted cross-entropy for sentence loss": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8"
+    ],
+    "word-level loss uses class weight": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8"
+    ],
+    "negative sampling per epoch (rng.choice of negatives)": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8"
+    ],
+    "threshold = best validation F1 on grid 0.02..0.98": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 13"
+    ],
+    "ties keep lower threshold (strict >)": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 13"
+    ],
+    "epoch chosen by validation PR-AUC": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8"
+    ],
+    "ensemble = mean of seed probabilities": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 13"
+    ],
+    "story-level bootstrap with default_rng(seed)": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 13"
+    ],
+    "seed set (python/numpy/torch/cuda)": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 8"
+    ],
+    "classifier head = AutoModelForSequenceClassification(num_labels=2)": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 3",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6"
+    ],
+    "BABE 10% held-out, stratified, random_state=0": [
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 5",
+      "<Drive>/Colab Notebooks/BASIL_Lexical_Bias_Transfer_Experiments.ipynb cell 6"
+    ]
+  },
+  "report_claims": {
+    "stage1_anno_lexical": {
+      "epochs": 2,
+      "lr": 2e-05,
+      "batch": 32,
+      "max_len": 128
+    },
+    "stage2_babe": {
+      "epochs": 3,
+      "lr": 1e-05,
+      "batch": 16,
+      "max_len": 128
+    },
+    "stage3_basil": {
+      "epochs": 8,
+      "lr": 1e-05,
+      "batch": 16,
+      "max_len": 256
+    }
+  },
+  "selection_procedure_in_code": {
+    "epoch": "highest validation PR-AUC (average_precision_score on validation)",
+    "threshold": "pick_threshold(): grid 0.02..0.98 step 0.01, best validation F1, ties keep the lower threshold",
+    "ensemble": "arithmetic mean of the per-seed probabilities; ensemble threshold re-picked on the mean validation probabilities"
+  },
+  "not_recorded_anywhere": [
+    "per-epoch validation loss",
+    "learning rate per step/epoch",
+    "library versions at the time the experiments ran",
+    "token-level word-model predictions"
+  ]
+}
